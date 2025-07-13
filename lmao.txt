@@ -1,0 +1,54 @@
+# 🎓 Student Marks Analysis System
+
+A **Streamlit-based interactive web application** for uploading, exploring, visualizing, and analyzing student marks across multiple subjects. Ideal for educators, academic analysts, and institutions to identify trends, performance issues, and outliers.
+
+---
+ghanre
+dila de ghar 
+
+## 📌 Features
+
+✅ **Upload and Process Student Marks Dataset**  
+Upload `.csv`, `.xls`, `.xlsx`, or `.json` files containing detailed marks structure for multiple students across subjects.
+
+✅ **Student-wise and Subject-wise Analysis**  
+Break down total marks, CIA (internal), SEE (final exam), and grades for each subject, student-wise or subject-wise.
+
+✅ **Missing Data Detection**  
+Displays students and subjects with missing marks using intuitive tables.
+
+✅ **Categorical & Numerical Analysis**  
+Explore frequency distributions, grouped bar charts, histograms, and correlation heatmaps with smart column selectors.
+
+✅ **Outlier Detection & Data Cleaning**  
+Identify outliers using Z-score, handle missing values, drop or transform data – all visually.
+
+✅ **Data Preprocessing Module**  
+Includes standardization, min-max scaling, and column removal for ready-to-train datasets.
+
+✅ **Download Cleaned Data**  
+Export the processed dataset to `.csv` with one click.
+
+---
+
+## 🗂️ Dataset Structure (Expected Format)
+
+| USN        | Student Name       | 22AM3601_CIA | 22AM3601_SEE | 22AM3601_TOT | 22AM3601_GRD | ... |
+|------------|--------------------|--------------|--------------|--------------|--------------|-----|
+| ENG22AM0001 | AGASTHYA R KUMAR   | 48           | 32           | 80           | A            |     |
+| ENG22AM0002 | AKHILA RAO D       | 45           | NaN          | NaN          | NaN          |     |
+
+- Each subject includes:
+  - `_CIA`: Internal Marks
+  - `_SEE`: Final Exam Marks
+  - `_TOT`: Total = CIA + SEE
+  - `_GRD`: Grade (e.g., A+, B, C, F)
+
+---
+
+## 🚀 How to Run
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/student-marks-analysis.git
+cd student-marks-analysis
